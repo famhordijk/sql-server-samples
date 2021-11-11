@@ -37,3 +37,10 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     artifact: 'SQLDW'
     publishLocation: 'pipeline'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      
+      Get-Location
